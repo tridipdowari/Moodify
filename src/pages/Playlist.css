@@ -1,0 +1,27 @@
+.playlist {
+  padding: 20px;
+}
+
+.back {
+  padding: 8px 16px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.songs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.song-card {
+  padding: 15px;
+  border-radius: 10px;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+}

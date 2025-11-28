@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Playlist from "./pages/Playlist";
 
 function App() {
-  
   return (
-    <div>
-      Moodify
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/playlist/:moodName" element={<Playlist />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
